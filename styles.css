@@ -262,3 +262,20 @@ body.screen-leaving{opacity:0;transform:translateY(-5px);transition:opacity .14s
  .main-nav.open{display:flex}
  .main-nav a{text-align:center;padding:9px;font-size:10px}
 }
+
+/* Dedicated page for Alla's psychological fairy tales */
+.direction-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.direction-story{background:linear-gradient(145deg,#674039 0%,#3c202c 58%,#21121b 100%);border-color:rgba(242,215,160,.55)}
+.direction-story .direction-icon{color:#f5d5a0}
+.story-page-hero{background:linear-gradient(110deg,#633a35 0%,#391e2a 54%,#21121b 100%)}
+.story-explainer{padding-top:34px;padding-bottom:30px}
+.story-process{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.story-process-step{position:relative;padding:23px 24px 22px 76px;background:linear-gradient(145deg,#3b202d,#21131c);border:1px solid var(--line);border-radius:4px;min-height:190px}
+.story-step-number{position:absolute;left:23px;top:26px;font-size:27px;font-weight:700;color:var(--gold)}
+.story-process-step h2{font-size:24px;line-height:1.2;margin:8px 0 10px}
+.story-process-step p:not(.eyebrow){font-size:10px;line-height:1.75;color:var(--muted);margin:0 0 13px}
+.story-note{margin:17px 0 0;padding:13px 16px;border-left:2px solid var(--gold);background:#28151f;color:#c9b4b0;font-size:9px;line-height:1.7}
+.service-card.featured-story{background:linear-gradient(145deg,#704039,#3b202b 56%,#21121b);border-color:rgba(242,215,160,.65);box-shadow:0 12px 26px #0006,inset 0 1px 0 #fff2d4}
+.service-card.featured-story .service-number:after{content:"АВТОРСКАЯ УСЛУГА АЛЛЫ";font-size:7px;color:#ffe1a5;margin-left:auto;padding-left:10px}
+@media(max-width:760px){.direction-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.story-process{grid-template-columns:1fr}}
+@media(max-width:520px){.direction-grid{grid-template-columns:1fr}.story-process-step{padding:19px 18px 18px 65px}.story-step-number{left:18px;top:21px}}
