@@ -1,240 +1,56 @@
-<!doctype html>
-<html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#210d18">
-  <meta name="description" content="Между строк × От сердца — матрицы, Таро и метафорические карты. Пространство самопознания и исследования родовых историй.">
-  <title>Между строк × От сердца — пространство смыслов</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header class="header">
-  <a class="brand" href="#home" aria-label="Между строк × От сердца — главная">
-    <span>МЕЖДУ СТРОК</span><i>×</i><span>ОТ СЕРДЦА</span>
-  </a>
-  <button class="menu" id="menu" aria-label="Открыть меню" aria-expanded="false">☰</button>
-  <nav id="nav">
-    <a href="#nastya-catalog">Расклады Насти</a>
-    <a href="#alla-catalog">Практики Аллы</a>
-    <a href="#joint">Карма Рода</a>
-    <a href="#authors">Авторы</a>
-    <button class="outline-button" id="loginOpen">Личный кабинет</button>
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#210d18"><meta name="description" content="Матрицы, Таро и метафорические практики. Пространство самопознания и родовой памяти."><title>Главная · Между строк × От сердца</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-symbol">✦</span><span>МЕЖДУ СТРОК <i>×</i> ОТ СЕРДЦА</span></a>
+  <button class="menu-button" id="menuButton" aria-label="Открыть меню" aria-expanded="false">☰</button>
+  <nav class="main-nav" id="mainNav">
+    <a href="index.html" data-page="index">Главная</a>
+    <a href="about.html" data-page="about">Авторы</a>
+    <a href="tarot.html" data-page="tarot">Таро</a>
+    <a href="matrices.html" data-page="matrices">Матрицы</a>
+    <a href="mak.html" data-page="mak">МАК</a>
+    <a href="library.html" data-page="library">Библиотека</a>
+    <a class="nav-book" href="booking.html">Запись <span>↗</span></a>
+    <a class="nav-account" href="account.html">Личный кабинет</a>
   </nav>
-</header>
-
-<main id="home">
-  <section class="hero">
-    <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
-    <div class="hero-content">
-      <p class="eyebrow"><span></span> ПРОСТРАНСТВО САМОПОЗНАНИЯ</p>
-      <h1>У каждой истории<br><em>есть свои смыслы.</em></h1>
-      <p class="hero-lead">Два автора. Разные инструменты. Одно пространство для исследования отношений, личных историй и родовых сценариев.</p>
-      <div class="hero-actions">
-        <a class="button button-gold" href="#nastya-catalog">Выбрать расклад <span>↗</span></a>
-        <a class="button button-glass" href="#alla-catalog">Исследовать родовые программы</a>
-      </div>
-    </div>
-    <div class="hero-stamp"><span>МЕЖДУ</span><b>СТРОК</b><i>×</i><span>ОТ СЕРДЦА</span></div>
-    <div class="hero-bottom"><span>ТАРО</span><b>✦</b><span>МАТРИЦЫ</span><b>✦</b><span>МАК</span></div>
-  </section>
-
-  <section class="intro section">
-    <p class="eyebrow">НАШ ПОДХОД</p>
-    <h2>Не готовые ответы.<br><em>А пространство для своих открытий.</em></h2>
-    <p>Матрицы по дате рождения, Таро и метафорические ассоциативные карты помогают взглянуть на привычные истории под новым углом, заметить важные вопросы и сформулировать собственные выводы.</p>
-  </section>
-
-  <section class="catalog-section section" id="nastya-catalog">
-    <div class="catalog-top">
-      <div>
-        <p class="eyebrow">НАПРАВЛЕНИЕ · ТАРО</p>
-        <h2>Расклады <em>Насти</em></h2>
-        <p class="catalog-intro">Отношения, чувства, выбор и жизненные ситуации. Выберите тему, с которой хочется разобраться внимательнее.</p><a class="catalog-price-link" href="https://t.me/From_the_1heart" target="_blank" rel="noopener">Смотреть актуальный прайс Насти ↗</a>
-      </div>
-      <div class="catalog-mark mark-tarot"><span>ОТ</span><b>СЕРДЦА</b><i>✦</i></div>
-    </div>
-    <div class="catalog-grid">
-      <article class="catalog-card tarot-card">
-        <div class="card-topline"><span>01 / ОТНОШЕНИЯ</span><span class="card-glyph">✧</span></div>
-        <h3>Мысли, чувства,<br>намерения</h3>
-        <p>Исследование эмоционального отношения, мыслей и намерений человека, а также того, как проявляется связь между вами.</p>
-        <div class="card-meta"><span>ИНДИВИДУАЛЬНЫЙ РАСКЛАД</span><a class="price-link" href="https://t.me/From_the_1heart" target="_blank" rel="noopener">Актуальный прайс Насти ↗</a></div>
-        <button class="button button-card book" data-service="Мысли, чувства и намерения" data-author="Настя">Выбрать расклад <span>↗</span></button>
-      </article>
-      <article class="catalog-card tarot-card">
-        <div class="card-topline"><span>02 / ОТНОШЕНИЯ</span><span class="card-glyph">◈</span></div>
-        <h3>Что происходит<br>между нами?</h3>
-        <p>Взгляд на динамику отношений: что сближает, что создаёт дистанцию и какие темы остаются невысказанными.</p>
-        <div class="card-meta"><span>ИНДИВИДУАЛЬНЫЙ РАСКЛАД</span><a class="price-link" href="https://t.me/From_the_1heart" target="_blank" rel="noopener">Актуальный прайс Насти ↗</a></div>
-        <button class="button button-card book" data-service="Что происходит между нами?" data-author="Настя">Выбрать расклад <span>↗</span></button>
-      </article>
-      <article class="catalog-card tarot-card">
-        <div class="card-topline"><span>03 / ПЕРСПЕКТИВА</span><span class="card-glyph">✦</span></div>
-        <h3>Развитие<br>отношений</h3>
-        <p>Возможные тенденции и сценарии развития ситуации. На что стоит обратить внимание и какие факторы могут повлиять на выбор.</p>
-        <div class="card-meta"><span>РАСКЛАД НА ПЕРСПЕКТИВУ</span><a class="price-link" href="https://t.me/From_the_1heart" target="_blank" rel="noopener">Актуальный прайс Насти ↗</a></div>
-        <button class="button button-card book" data-service="Перспектива развития отношений" data-author="Настя">Выбрать расклад <span>↗</span></button>
-      </article>
-      <article class="catalog-card tarot-card">
-        <div class="card-topline"><span>04 / ВЫБОР</span><span class="card-glyph">◇</span></div>
-        <h3>Два пути</h3>
-        <p>Сравнение двух вариантов: особенности каждого пути, возможные сложности, ресурсы и вопросы, которые помогут принять решение.</p>
-        <div class="card-meta"><span>РАСКЛАД НА ВЫБОР</span><a class="price-link" href="https://t.me/From_the_1heart" target="_blank" rel="noopener">Актуальный прайс Насти ↗</a></div>
-        <button class="button button-card book" data-service="Два пути — расклад на выбор" data-author="Настя">Выбрать расклад <span>↗</span></button>
-      </article>
-      <article class="catalog-card tarot-card">
-        <div class="card-topline"><span>05 / ДИНАМИКА</span><span class="card-glyph">❖</span></div>
-        <h3>Динамика<br>трёх месяцев</h3>
-        <p>Последовательное рассмотрение ситуации по месяцам: изменения, ключевые темы периода и точка подведения итогов.</p>
-        <div class="card-meta"><span>РАЗВЁРНУТЫЙ РАСКЛАД</span><a class="price-link" href="https://t.me/From_the_1heart" target="_blank" rel="noopener">Актуальный прайс Насти ↗</a></div>
-        <button class="button button-card book" data-service="Динамика трёх месяцев" data-author="Настя">Выбрать расклад <span>↗</span></button>
-      </article>
-      <article class="catalog-card tarot-card">
-        <div class="card-topline"><span>06 / СИТУАЦИЯ</span><span class="card-glyph">✧</span></div>
-        <h3>Суть ситуации</h3>
-        <p>Что лежит в основе происходящего, какие обстоятельства могут оставаться вне внимания и на чём полезно сосредоточиться.</p>
-        <div class="card-meta"><span>ТЕМАТИЧЕСКИЙ РАСКЛАД</span><a class="price-link" href="https://t.me/From_the_1heart" target="_blank" rel="noopener">Актуальный прайс Насти ↗</a></div>
-        <button class="button button-card book" data-service="Суть ситуации" data-author="Настя">Выбрать расклад <span>↗</span></button>
-      </article>
-    </div>
-    <p class="catalog-footnote">Перечень и формулировки — стартовая редакция каталога. Настя сможет уточнить названия, позиции и содержание раскладов перед запуском.</p>
-  </section>
-
-  <section class="catalog-section section alla-section" id="alla-catalog">
-    <div class="catalog-top">
-      <div>
-        <p class="eyebrow">НАПРАВЛЕНИЕ · МАТРИЦЫ И РОДОВЫЕ ПРОГРАММЫ</p>
-        <h2>Практики <em>Аллы</em></h2>
-        <p class="catalog-intro">Исследование родовых линий и символических задач через дату рождения, матричные расчёты и подробные авторские разборы.</p>
-      </div>
-      <div class="catalog-mark mark-matrix"><span>МЕЖДУ</span><b>СТРОК</b><i>✦</i></div>
-    </div>
-    <div class="catalog-grid">
-      <article class="catalog-card matrix-card">
-        <div class="card-topline"><span>01 / ДАТА РОЖДЕНИЯ</span><span class="card-glyph">✥</span></div>
-        <h3>Полная<br>родовая матрица</h3>
-        <p>Комплексный разбор мужской и женской родовых линий, родового квадрата, предназначения и символических задач.</p>
-        <div class="card-meta"><span>ПОДРОБНЫЙ АВТОРСКИЙ РАЗБОР</span><b>Стоимость уточняется</b></div>
-        <button class="button button-card book" data-service="Полная родовая матрица" data-author="Алла">Выбрать разбор <span>↗</span></button>
-      </article>
-      <article class="catalog-card matrix-card">
-        <div class="card-topline"><span>02 / МУЖСКАЯ ЛИНИЯ</span><span class="card-glyph">✧</span></div>
-        <h3>Карма<br>мужского рода</h3>
-        <p>Исследование символических программ и повторяющихся тем по мужской линии рода, передаваемых между поколениями.</p>
-        <div class="card-meta"><span>РОДОВАЯ ЛИНИЯ</span><b>Стоимость уточняется</b></div>
-        <button class="button button-card book" data-service="Карма мужского рода" data-author="Алла">Выбрать разбор <span>↗</span></button>
-      </article>
-      <article class="catalog-card matrix-card">
-        <div class="card-topline"><span>03 / ЖЕНСКАЯ ЛИНИЯ</span><span class="card-glyph">◈</span></div>
-        <h3>Карма<br>женского рода</h3>
-        <p>Исследование символических программ и повторяющихся тем по женской линии, семейных историй и родовых сюжетов.</p>
-        <div class="card-meta"><span>РОДОВАЯ ЛИНИЯ</span><b>Стоимость уточняется</b></div>
-        <button class="button button-card book" data-service="Карма женского рода" data-author="Алла">Выбрать разбор <span>↗</span></button>
-      </article>
-      <article class="catalog-card matrix-card">
-        <div class="card-topline"><span>04 / СТРУКТУРА РОДА</span><span class="card-glyph">◇</span></div>
-        <h3>Родовой<br>квадрат</h3>
-        <p>Отдельное внимание четырём родовым направлениям, их взаимосвязям и темам, которые складываются в общую картину.</p>
-        <div class="card-meta"><span>ТЕМАТИЧЕСКИЙ РАЗБОР</span><b>Стоимость уточняется</b></div>
-        <button class="button button-card book" data-service="Родовой квадрат" data-author="Алла">Выбрать разбор <span>↗</span></button>
-      </article>
-      <article class="catalog-card matrix-card">
-        <div class="card-topline"><span>05 / ПРЕДНАЗНАЧЕНИЕ</span><span class="card-glyph">✦</span></div>
-        <h3>Личное и родовое<br>предназначение</h3>
-        <p>Разбор символических задач и направлений развития, которые отражены в индивидуальных и родовых расчётах.</p>
-        <div class="card-meta"><span>ИНДИВИДУАЛЬНЫЙ РАЗБОР</span><b>Стоимость уточняется</b></div>
-        <button class="button button-card book" data-service="Личное и родовое предназначение" data-author="Алла">Выбрать разбор <span>↗</span></button>
-      </article>
-      <article class="catalog-card matrix-card">
-        <div class="card-topline"><span>06 / КОМПЛЕКСНЫЙ АНАЛИЗ</span><span class="card-glyph">❖</span></div>
-        <h3>Родовые<br>программы</h3>
-        <p>Объединённый разбор мужской и женской линий с выявлением общих тем, пересечений и смысловых акцентов.</p>
-        <div class="card-meta"><span>КОМПЛЕКСНЫЙ РАЗБОР</span><b>Стоимость уточняется</b></div>
-        <button class="button button-card book" data-service="Комплексный анализ родовых программ" data-author="Алла">Выбрать разбор <span>↗</span></button>
-      </article>
-    </div>
-    <p class="catalog-footnote">Содержание основано на обозначенных автором направлениях: карма мужского и женского рода, родовой квадрат и предназначение. Подробный состав каждого пакета предстоит согласовать.</p>
-  </section>
-
-  <section class="joint section" id="joint">
-    <div class="joint-copy">
-      <p class="eyebrow">ОБЩИЙ ПРОЕКТ · МАК «КАРМА РОДА»</p>
-      <h2>Когда символы<br><em>помогают услышать историю.</em></h2>
-      <p>Совместные практики Аллы и Насти на метафорических ассоциативных картах — исследование семейных историй, образов и личных смыслов через вопросы и ассоциации.</p>
-      <div class="joint-actions">
-        <button class="button button-gold book" data-service="МАК «Тайна рода»" data-author="Алла и Настя">«Тайна рода» <span>↗</span></button>
-        <button class="button button-glass book" data-service="МАК «Наказ рода»" data-author="Алла и Настя">«Наказ рода» <span>↗</span></button>
-      </div>
-    </div>
-    <div class="seal"><span>КАРМА</span><b>РОДА</b><small>МАК · СИМВОЛЫ · ИСТОРИИ</small></div>
-  </section>
-
-  <section class="authors-section section" id="authors">
-    <div class="section-head"><div><p class="eyebrow">ДВА ГОЛОСА</p><h2>Авторы <em>пространства</em></h2></div><small>01 / 02</small></div>
-    <div class="authors">
-      <article class="author author-alla"><img id="allaPhoto" class="author-photo" alt="Графический портрет Аллы" loading="lazy"><div><p class="eyebrow">МЕЖДУ СТРОК</p><h3>Алла</h3><p>Матрицы, карма мужского и женского рода, родовой квадрат и авторские разборы семейных программ.</p><div class="author-links"><a class="text-link" href="#alla-catalog">Каталог Аллы ↗</a><a class="text-link" href="https://vk.ru/soulmatetarot" target="_blank" rel="noopener">Сообщество Аллы ВКонтакте ↗</a></div></div></article>
-      <article class="author author-nastya"><img id="nastyaPhoto" class="author-photo" alt="Графический портрет Насти" loading="lazy"><div><p class="eyebrow">ОТ СЕРДЦА</p><h3>Настя</h3><p>Таро-расклады о чувствах, отношениях, жизненных ситуациях, выборе и возможных тенденциях.</p><div class="author-links"><a class="text-link" href="https://t.me/From_the_1heart" target="_blank" rel="noopener">Telegram Насти ↗</a><a class="text-link" href="https://t.me/From_the_1heart" target="_blank" rel="noopener">Актуальный прайс ↗</a></div></div></article>
-    </div>
-  </section>
-
-  <section class="library section" id="library">
-    <div class="section-head"><div><p class="eyebrow">ЧИТАТЬ И РАЗМЫШЛЯТЬ</p><h2>Пространство <em>смыслов</em></h2></div><small>02 / 02</small></div>
-    <div class="articles">
-      <article><b>01</b><p class="eyebrow">РОДОВЫЕ ИСТОРИИ</p><h3>Что мы называем родовым сценарием?</h3><p>О повторяющихся сюжетах, семейных историях и личном взгляде на них.</p><small>МАТЕРИАЛ ГОТОВИТСЯ</small></article>
-      <article><b>02</b><p class="eyebrow">СИМВОЛЫ</p><h3>Как работают метафорические образы</h3><p>Почему один образ может вызывать разные ассоциации у разных людей.</p><small>МАТЕРИАЛ ГОТОВИТСЯ</small></article>
-      <article><b>03</b><p class="eyebrow">ТАРО</p><h3>Вопрос, с которого начинается расклад</h3><p>Как сформулировать запрос, чтобы исследование было полезным.</p><small>МАТЕРИАЛ ГОТОВИТСЯ</small></article>
-    </div>
-  </section>
-
-  <section class="closing section">
-    <p class="eyebrow">ВАША ИСТОРИЯ МОЖЕТ НАЧАТЬСЯ ЗДЕСЬ</p>
-    <h2>Иногда достаточно<br><em>задать правильный вопрос.</em></h2>
-    <button class="button button-gold" id="closingBook">Оставить заявку <span>↗</span></button>
-  </section>
-</main>
-
-<footer>
-  <a class="brand" href="#home"><span>МЕЖДУ СТРОК</span><i>×</i><span>ОТ СЕРДЦА</span></a>
-  <span>© 2026 · Авторское пространство самопознания</span>
-  <a href="https://t.me/From_the_1heart" target="_blank" rel="noopener">Telegram Насти ↗</a>
-</footer>
-
-<div class="backdrop" id="bookingModal" aria-hidden="true">
-  <section class="modal">
-    <button class="x" data-close aria-label="Закрыть">×</button>
-    <p class="eyebrow">ЗАПРОС НА КОНСУЛЬТАЦИЮ</p><h2>Начать <em>разговор</em></h2>
-    <form id="bookingForm">
-      <label>Услуга<select id="service" required><option value="">Выберите услугу</option></select></label>
-      <label>Автор<select id="author" required><option value="Алла">Алла</option><option value="Настя">Настя</option><option value="Алла и Настя">Алла и Настя</option></select></label>
-      <div class="formrow"><label>Желаемая дата<input id="date" type="date"></label><label>Время<input id="time" type="time"></label></div>
-      <label>Ваше имя<input id="client" required placeholder="Как к вам обращаться?"></label>
-      <label>Telegram или телефон<input id="contact" required placeholder="@username или номер телефона"></label>
-      <label>Комментарий<textarea id="comment" rows="3" placeholder="Кратко опишите запрос (необязательно)"></textarea></label>
-      <p class="hint">Это предварительная заявка, а не подтверждённая запись. Автор свяжется с вами для согласования времени и условий.</p>
-      <button class="button button-gold wide">Отправить заявку <span>↗</span></button>
-    </form>
-    <div id="bookingDone" hidden><div class="success-mark">✓</div><h3>Заявка сохранена</h3><p class="hint">В демонстрационной версии заявка сохранена только в этом браузере. Уведомления пока не подключены.</p><button class="button button-glass" data-close>Закрыть</button></div>
-  </section>
-</div>
-
-<div class="backdrop" id="accountModal" aria-hidden="true">
-  <section class="modal">
-    <button class="x" data-close aria-label="Закрыть">×</button>
-    <div id="loginPane"><p class="eyebrow">ЛИЧНОЕ ПРОСТРАНСТВО</p><h2>Войти <em>в кабинет</em></h2>
-      <form id="loginForm"><label>Ваше имя<input id="loginName" required></label><label>Электронная почта<input id="email" type="email" required></label><button class="button button-gold wide">Продолжить <span>↗</span></button></form>
-      <p class="hint">Демо-вход администратора: имя «Администратор», пароль «demo2026». Не используйте реальные персональные данные: это локальный демонстрационный кабинет.</p>
-    </div>
-    <div id="dashboard" hidden><p class="eyebrow">МОЁ ПРОСТРАНСТВО</p><h2>Здравствуйте, <em id="dashName"></em></h2>
-      <div class="tabs"><button data-tab="orders" class="active">Мои заявки</button><button data-tab="profile">Профиль</button><button data-tab="admin" id="adminTab" hidden>Администрирование</button></div>
-      <div id="ordersPane"></div><div id="profilePane" hidden></div><div id="adminPane" hidden></div>
-    </div>
-  </section>
-</div>
-<script src="assets/portraits.js"></script>
-<script src="app.js"></script>
-</body>
-</html>
+</header><main>
+<section class="home-hero">
+  <div class="hero-photo-shade"></div>
+  <div class="hero-inner">
+    <p class="eyebrow"><span></span> ПРОСТРАНСТВО САМОПОЗНАНИЯ</p>
+    <h1>Между строк <em>×</em><br>От сердца</h1>
+    <p class="hero-subtitle">Символы, родовая память и личные истории</p>
+    <p class="hero-copy">Два автора и два направления работы, объединённые интересом к внутреннему миру человека, отношениям и семейным сюжетам.</p>
+    <div class="hero-actions"><a class="button button-gold" href="tarot.html">Расклады Насти <span>↗</span></a><a class="button button-outline" href="matrices.html">Практики Аллы <span>↗</span></a></div>
+  </div>
+  <div class="hero-authors">
+    <a class="hero-author" href="tarot.html"><img src="assets/nastya-portrait.webp" alt="Графический портрет Насти"><span><b>Настя</b><small>Таро · расклады · отношения</small></span></a>
+    <a class="hero-author" href="matrices.html"><img src="assets/alla-portrait.webp" alt="Графический портрет Аллы"><span><b>Алла</b><small>Матрицы · родовые программы</small></span></a>
+  </div>
+  <div class="hero-bottom-note">ИССЛЕДОВАТЬ СЕБЯ · ПОНИМАТЬ СВОИ ИСТОРИИ · НАХОДИТЬ СВОИ ОТВЕТЫ</div>
+</section>
+<section class="section intro-section">
+  <p class="eyebrow">ДВА ГОЛОСА · ОДНО ПРОСТРАНСТВО</p>
+  <h2>У каждой истории<br><em>есть свои смыслы.</em></h2>
+  <p class="section-lead">Таро, матрицы и метафорические ассоциативные карты помогают остановиться, посмотреть на привычную ситуацию с другой стороны и сформулировать собственные вопросы.</p>
+</section>
+<section class="section direction-section">
+  <div class="section-heading"><div><p class="eyebrow">ВЫБЕРИТЕ НАПРАВЛЕНИЕ</p><h2>С чего начнём?</h2></div><span class="section-number">01 / 03</span></div>
+  <div class="direction-grid">
+    <a class="direction-card direction-tarot" href="tarot.html"><div class="direction-icon">✧</div><span class="card-label">НАСТЯ · ТАРО</span><h3>Каталог раскладов</h3><p>Отношения, чувства, выбор и жизненные ситуации.</p><span class="direction-cta">Перейти к раскладам <b>↗</b></span></a>
+    <a class="direction-card direction-matrix" href="matrices.html"><div class="direction-icon">✥</div><span class="card-label">АЛЛА · МАТРИЦЫ</span><h3>Родовые исследования</h3><p>Карма мужского и женского рода, родовой квадрат и предназначение.</p><span class="direction-cta">Перейти к практикам <b>↗</b></span></a>
+    <a class="direction-card direction-mak" href="mak.html"><div class="direction-icon">◈</div><span class="card-label">СОВМЕСТНО · МАК</span><h3>Карма Рода</h3><p>«Тайна рода», «Наказ рода» и работа с метафорическими образами.</p><span class="direction-cta">Посмотреть практики <b>↗</b></span></a>
+  </div>
+</section>
+<section class="section authors-preview">
+  <div class="section-heading"><div><p class="eyebrow">ЗНАКОМСТВО</p><h2>Авторы проекта</h2></div><a class="text-link" href="about.html">О проекте и авторах ↗</a></div>
+  <div class="author-preview-grid">
+    <article class="author-preview"><img src="assets/nastya-portrait.webp" alt="Графический портрет Насти"><div><span class="card-label">ОТ СЕРДЦА</span><h3>Настя</h3><p>Таро и вдумчивые расклады о чувствах, отношениях, выборе и важных жизненных ситуациях.</p><a href="tarot.html" class="text-link">Услуги Насти ↗</a></div></article>
+    <article class="author-preview"><img src="assets/alla-portrait.webp" alt="Графический портрет Аллы"><div><span class="card-label">МЕЖДУ СТРОК</span><h3>Алла</h3><p>Матрицы, карма мужского и женского рода, родовые программы и авторские разборы.</p><a href="matrices.html" class="text-link">Услуги Аллы ↗</a></div></article>
+  </div>
+</section>
+<section class="section final-cta"><p class="eyebrow">ВАША ИСТОРИЯ МОЖЕТ НАЧАТЬСЯ ЗДЕСЬ</p><h2>Выберите тему,<br><em>с которой хочется разобраться.</em></h2><a class="button button-gold" href="booking.html">Оставить заявку <span>↗</span></a></section></main>
+<footer class="site-footer">
+  <a class="brand footer-brand" href="index.html"><span class="brand-symbol">✦</span><span>МЕЖДУ СТРОК <i>×</i> ОТ СЕРДЦА</span></a>
+  <p>Авторское пространство самопознания · 2026</p>
+  <div class="footer-links"><a href="https://vk.ru/soulmatetarot" target="_blank" rel="noopener">VK Аллы ↗</a><a href="https://t.me/From_the_1heart" target="_blank" rel="noopener">Telegram Насти ↗</a></div>
+</footer><script src="services.js"></script><script src="app.js"></script></body></html>
