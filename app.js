@@ -42,7 +42,7 @@ if(menuButton&&mainNav){
  }));
 }
 const currentPage=location.pathname.split("/").pop()||"index.html";
-const navPageMap={"index.html":"index","about.html":"about","tarot.html":"tarot","matrices.html":"matrices","mak.html":"mak","library.html":"library"};
+const navPageMap={"index.html":"index","about.html":"about","tarot.html":"tarot","stories.html":"stories","matrices.html":"matrices","mak.html":"mak","library.html":"library"};
 $$(".main-nav a").forEach(link=>{if(link.dataset.page===navPageMap[currentPage])link.classList.add("active")});
 
 function renderCatalog(){
