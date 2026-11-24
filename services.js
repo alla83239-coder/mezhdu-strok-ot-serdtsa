@@ -19,7 +19,7 @@ window.SITE_SERVICES = [
     "format": "Индивидуальный расклад с авторской трактовкой",
     "duration": "Согласовывается при записи",
     "price": "Актуальную стоимость уточняйте в прайсе Насти",
-    "priceUrl": "https://t.me/From_the_1heart"
+    "priceUrl": "https://t.me/From_the_1heart/12"
   },
   {
     "id": "tarot-between",
@@ -41,7 +41,7 @@ window.SITE_SERVICES = [
     "format": "Тематический расклад с подробной трактовкой",
     "duration": "Согласовывается при записи",
     "price": "Актуальную стоимость уточняйте в прайсе Насти",
-    "priceUrl": "https://t.me/From_the_1heart"
+    "priceUrl": "https://t.me/From_the_1heart/12"
   },
   {
     "id": "tarot-development",
@@ -63,7 +63,7 @@ window.SITE_SERVICES = [
     "format": "Прогностический тематический расклад",
     "duration": "Период и объём уточняются при записи",
     "price": "Актуальную стоимость уточняйте в прайсе Насти",
-    "priceUrl": "https://t.me/From_the_1heart"
+    "priceUrl": "https://t.me/From_the_1heart/12"
   },
   {
     "id": "tarot-two-ways",
@@ -85,7 +85,7 @@ window.SITE_SERVICES = [
     "format": "Сравнительный расклад на два варианта",
     "duration": "Согласовывается при записи",
     "price": "Актуальную стоимость уточняйте в прайсе Насти",
-    "priceUrl": "https://t.me/From_the_1heart"
+    "priceUrl": "https://t.me/From_the_1heart/12"
   },
   {
     "id": "tarot-three-months",
@@ -107,7 +107,7 @@ window.SITE_SERVICES = [
     "format": "Развёрнутый расклад по месяцам",
     "duration": "Согласовывается при записи",
     "price": "Актуальную стоимость уточняйте в прайсе Насти",
-    "priceUrl": "https://t.me/From_the_1heart"
+    "priceUrl": "https://t.me/From_the_1heart/12"
   },
   {
     "id": "tarot-situation",
@@ -129,7 +129,7 @@ window.SITE_SERVICES = [
     "format": "Индивидуальный тематический расклад",
     "duration": "Согласовывается при записи",
     "price": "Актуальную стоимость уточняйте в прайсе Насти",
-    "priceUrl": "https://t.me/From_the_1heart"
+    "priceUrl": "https://t.me/From_the_1heart/12"
   },
   {
     "id": "matrix-full",
@@ -150,7 +150,8 @@ window.SITE_SERVICES = [
     ],
     "format": "Индивидуальный письменный или голосовой разбор — формат согласовывается",
     "duration": "Согласовывается при записи",
-    "price": "Стоимость уточняется"
+    "price": "Стоимость уточняется",
+    "priceUrl": "https://vk.ru/market-236182359?screen=group"
   },
   {
     "id": "matrix-men",
@@ -170,7 +171,8 @@ window.SITE_SERVICES = [
     ],
     "format": "Индивидуальный авторский разбор",
     "duration": "Согласовывается при записи",
-    "price": "Стоимость уточняется"
+    "price": "Стоимость уточняется",
+    "priceUrl": "https://vk.ru/market-236182359?screen=group"
   },
   {
     "id": "matrix-women",
@@ -190,7 +192,8 @@ window.SITE_SERVICES = [
     ],
     "format": "Индивидуальный авторский разбор",
     "duration": "Согласовывается при записи",
-    "price": "Стоимость уточняется"
+    "price": "Стоимость уточняется",
+    "priceUrl": "https://vk.ru/market-236182359?screen=group"
   },
   {
     "id": "matrix-square",
@@ -211,7 +214,8 @@ window.SITE_SERVICES = [
     ],
     "format": "Тематический авторский разбор",
     "duration": "Согласовывается при записи",
-    "price": "Стоимость уточняется"
+    "price": "Стоимость уточняется",
+    "priceUrl": "https://vk.ru/market-236182359?screen=group"
   },
   {
     "id": "matrix-purpose",
@@ -231,7 +235,8 @@ window.SITE_SERVICES = [
     ],
     "format": "Индивидуальный авторский разбор",
     "duration": "Согласовывается при записи",
-    "price": "Стоимость уточняется"
+    "price": "Стоимость уточняется",
+    "priceUrl": "https://vk.ru/market-236182359?screen=group"
   },
   {
     "id": "matrix-programs",
@@ -252,7 +257,8 @@ window.SITE_SERVICES = [
     ],
     "format": "Комплексный авторский разбор",
     "duration": "Согласовывается при записи",
-    "price": "Стоимость уточняется"
+    "price": "Стоимость уточняется",
+    "priceUrl": "https://vk.ru/market-236182359?screen=group"
   },
   {
     "id": "mak-secret",
@@ -316,6 +322,6 @@ window.SITE_SERVICES = [
     "format": "Авторская психологическая сказка по мотивам расклада Таро. Итоговый формат и объём необходимо согласовать с Настей.",
     "duration": "Согласовывается индивидуально",
     "price": "Актуальную стоимость уточняйте в прайсе Насти",
-    "priceUrl": "https://t.me/From_the_1heart"
+    "priceUrl": "https://t.me/From_the_1heart/12"
   }
 ];
