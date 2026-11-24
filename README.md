@@ -22,10 +22,9 @@
 - `index.html` — страницы, каталоги, формы записи и кабинета.
 - `styles.css` — дизайн и адаптивность.
 - `app.js` — демонстрационная логика записи и кабинета.
-- `.github/workflows/deploy.yml` — автоматическая публикация на GitHub Pages.
 
 ## Публикация
-GitHub Actions запускает публикацию при push в `main`. Для GitHub Pages в настройках репозитория должен быть выбран источник **GitHub Actions**.
+GitHub Pages автоматически публикует содержимое корня ветки `main` после каждого push. За сборку и развёртывание отвечает встроенный workflow `pages build and deployment`.
 
 Адрес сайта: https://alla83239-coder.github.io/mezhdu-strok-ot-serdtsa/
 
