@@ -9,7 +9,17 @@ if(menuButton&&mainNav){menuButton.addEventListener("click",()=>{const open=main
 const currentPage=location.pathname.split("/").pop()||"index.html";
 const navPageMap={"index.html":"index","about.html":"about","tarot.html":"tarot","matrices.html":"matrices","mak.html":"mak","library.html":"library"};
 $$(".main-nav a").forEach(a=>{if(a.dataset.page===navPageMap[currentPage])a.classList.add("active")});
-function renderCatalog(){const grid=$("#serviceGrid");if(!grid)return;const category=grid.dataset.category;const list=serviceList.filter(s=>s.category===category);grid.innerHTML=list.map((s,i)=>'<a class="service-card '+(category==="matrix"?"matrix-card":category==="mak"?"mak-card":"")+'" href="service.html?id='+encodeURIComponent(s.id)+'"><div class="service-number"><span>'+String(i+1).padStart(2,"0")+' / '+esc(s.type)+'</span><span class="service-symbol">✧</span></div><h3>'+esc(s.title)+'</h3><p>'+esc(s.short)+'</p><span class="service-open">Подробнее об услуге <b>↗</b></span></a>').join("")}
+function renderCatalog(){
+ const grid=$("#serviceGrid");
+ if(!grid)return;
+ const category=grid.dataset.category;
+ const list=serviceList.filter(s=>s.category===category);
+ grid.innerHTML=list.map((s,i)=>{
+  const kind=category==="matrix"?"matrix-card":category==="mak"?"mak-card":"";
+  const featured=s.id==="tarot-story"?"featured-story":"";
+  return '<a class="service-card '+kind+' '+featured+'" href="service.html?id='+encodeURIComponent(s.id)+'"><div class="service-number"><span>'+String(i+1).padStart(2,"0")+' / '+esc(s.type)+'</span><span class="service-symbol">✧</span></div><h3>'+esc(s.title)+'</h3><p>'+esc(s.short)+'</p><span class="service-open">Подробнее об услуге <b>↗</b></span></a>';
+ }).join("");
+}
 renderCatalog();
 function renderService(){const host=$("#serviceTitle");if(!host)return;const id=new URLSearchParams(location.search).get("id");const s=serviceList.find(x=>x.id===id);if(!s){host.textContent="Услуга не найдена";$("#serviceIntro").textContent="Вернитесь в каталог и выберите интересующее направление.";return}
 $("#serviceType").textContent=s.type;host.textContent=s.title;$("#serviceBreadcrumb").textContent=s.title;$("#serviceIntro").textContent=s.intro;$("#serviceIncludes").innerHTML=s.includes.map(x=>"<li>"+esc(x)+"</li>").join("");$("#serviceFormat").textContent=s.format;$("#serviceDuration").textContent="Длительность: "+s.duration;$("#serviceAuthor").textContent=s.author;$("#servicePrice").textContent=s.price;const link=$("#servicePriceLink");if(s.priceUrl){link.href=s.priceUrl;link.hidden=false}$("#serviceCategoryLink").href=s.categoryUrl;$("#serviceCategoryLink").textContent=s.categoryTitle;$("#serviceBack").href=s.categoryUrl;$("#serviceBook").href="booking.html?service="+encodeURIComponent(s.id)}
@@ -18,3 +28,16 @@ function setupBooking(){const form=$("#bookingForm");if(!form)return;const selec
 setupBooking();
 function setupAccount(){const form=$("#accountForm");if(!form)return;const login=$("#accountLogin"),dashboard=$("#accountDashboard");form.addEventListener("submit",e=>{e.preventDefault();const name=$("#accountName").value.trim(),email=$("#accountEmail").value.trim();let admin=false;if(name.toLocaleLowerCase("ru-RU")==="администратор"){if(prompt("Демо-пароль администратора:")!=="demo2026"){alert("Неверный пароль.");return}admin=true}login.hidden=true;dashboard.hidden=false;$("#accountUserName").textContent=name;const items=getRequests().filter(x=>admin||x.name.toLocaleLowerCase("ru-RU")===name.toLocaleLowerCase("ru-RU")||x.contact.toLocaleLowerCase("ru-RU")===email.toLocaleLowerCase("ru-RU"));$("#accountRequests").innerHTML=items.length?items.map(x=>'<div class="request-card"><b>'+esc(x.service)+'</b><span>'+esc(x.author)+' · '+esc(x.date||"дата не указана")+' '+esc(x.time||"")+'</span><br><span>Статус: '+esc(x.status)+'</span></div>').join(""):'<div class="selection-summary">Заявок пока нет. Каталоги услуг доступны на отдельных страницах сайта.</div>';});$("#accountLogout").addEventListener("click",()=>{dashboard.hidden=true;login.hidden=false;form.reset()})}
 setupAccount();
+/* Each menu item and service card opens a separate HTML screen. */
+document.addEventListener("click",event=>{
+ const link=event.target.closest("a[href]");
+ if(!link||event.defaultPrevented||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+ if(link.target&&link.target!=="_self")return;
+ const href=link.getAttribute("href");
+ if(!href||href.startsWith("#")||href.startsWith("mailto:")||href.startsWith("tel:"))return;
+ let target;try{target=new URL(href,window.location.href)}catch{return}
+ if(target.origin!==window.location.origin||!target.pathname.toLowerCase().endsWith(".html"))return;
+ event.preventDefault();
+ document.body.classList.add("screen-leaving");
+ window.setTimeout(()=>{window.location.href=target.href},150);
+});
