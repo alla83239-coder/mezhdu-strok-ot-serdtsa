@@ -1,4 +1,7 @@
-const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)],KEY="msxos_requests_v2";
+const $=s=>document.querySelector(s), $=s=>[...document.querySelectorAll(s)],KEY="msxos_requests_v2";
+const portraits=window.MS_PORTRAITS||{};
+if(portraits.nastya && $("#nastyaPhoto")) $("#nastyaPhoto").src=portraits.nastya;
+if(portraits.alla && $("#allaPhoto")) $("#allaPhoto").src=portraits.alla;
 let requests=JSON.parse(localStorage.getItem(KEY)||"[]"),user=null;
 const save=()=>localStorage.setItem(KEY,JSON.stringify(requests));
 const open=id=>{$(id).classList.add("open");$(id).setAttribute("aria-hidden","false");document.body.style.overflow="hidden"};
